@@ -14,6 +14,10 @@
 		E40C2EC41B8460B90019BB98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E40C2EC21B8460B90019BB98 /* LaunchScreen.storyboard */; };
 		E40C2ECF1B8460B90019BB98 /* MazeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40C2ECE1B8460B90019BB98 /* MazeTests.swift */; };
 		E40C2EDA1B8460B90019BB98 /* MazeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40C2ED91B8460B90019BB98 /* MazeUITests.swift */; };
+		E41982D51B846A320023DC8B /* exit.png in Resources */ = {isa = PBXBuildFile; fileRef = E41982D11B846A320023DC8B /* exit.png */; };
+		E41982D61B846A320023DC8B /* ghost.png in Resources */ = {isa = PBXBuildFile; fileRef = E41982D21B846A320023DC8B /* ghost.png */; };
+		E41982D71B846A320023DC8B /* pacman.png in Resources */ = {isa = PBXBuildFile; fileRef = E41982D31B846A320023DC8B /* pacman.png */; };
+		E41982D81B846A320023DC8B /* squareWall.png in Resources */ = {isa = PBXBuildFile; fileRef = E41982D41B846A320023DC8B /* squareWall.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		E40C2ED51B8460B90019BB98 /* MazeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MazeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E40C2ED91B8460B90019BB98 /* MazeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MazeUITests.swift; sourceTree = "<group>"; };
 		E40C2EDB1B8460B90019BB98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E41982D11B846A320023DC8B /* exit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exit.png; sourceTree = "<group>"; };
+		E41982D21B846A320023DC8B /* ghost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ghost.png; sourceTree = "<group>"; };
+		E41982D31B846A320023DC8B /* pacman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pacman.png; sourceTree = "<group>"; };
+		E41982D41B846A320023DC8B /* squareWall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = squareWall.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,7 @@
 				E40C2EC01B8460B90019BB98 /* Assets.xcassets */,
 				E40C2EC21B8460B90019BB98 /* LaunchScreen.storyboard */,
 				E40C2EC51B8460B90019BB98 /* Info.plist */,
+				E41982D01B846A320023DC8B /* Supporting Files */,
 			);
 			path = Maze;
 			sourceTree = "<group>";
@@ -123,6 +132,17 @@
 				E40C2EDB1B8460B90019BB98 /* Info.plist */,
 			);
 			path = MazeUITests;
+			sourceTree = "<group>";
+		};
+		E41982D01B846A320023DC8B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E41982D11B846A320023DC8B /* exit.png */,
+				E41982D21B846A320023DC8B /* ghost.png */,
+				E41982D31B846A320023DC8B /* pacman.png */,
+				E41982D41B846A320023DC8B /* squareWall.png */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +212,7 @@
 				TargetAttributes = {
 					E40C2EB51B8460B90019BB98 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 53G9TV66M2;
 					};
 					E40C2EC91B8460B90019BB98 = {
 						CreatedOnToolsVersion = 7.0;
@@ -229,8 +250,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E40C2EC41B8460B90019BB98 /* LaunchScreen.storyboard in Resources */,
+				E41982D61B846A320023DC8B /* ghost.png in Resources */,
+				E41982D81B846A320023DC8B /* squareWall.png in Resources */,
+				E41982D51B846A320023DC8B /* exit.png in Resources */,
 				E40C2EC11B8460B90019BB98 /* Assets.xcassets in Resources */,
 				E40C2EBF1B8460B90019BB98 /* Main.storyboard in Resources */,
+				E41982D71B846A320023DC8B /* pacman.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +421,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Maze/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zl.Maze;
@@ -407,6 +433,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Maze/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zl.Maze;
@@ -481,6 +508,7 @@
 				E40C2EE01B8460B90019BB98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E40C2EE11B8460B90019BB98 /* Build configuration list for PBXNativeTarget "MazeTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +517,7 @@
 				E40C2EE31B8460B90019BB98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E40C2EE41B8460B90019BB98 /* Build configuration list for PBXNativeTarget "MazeUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +526,7 @@
 				E40C2EE61B8460B90019BB98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

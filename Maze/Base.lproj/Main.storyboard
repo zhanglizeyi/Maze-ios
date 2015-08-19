@@ -1,25 +1,96 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Maze" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pacman.png" translatesAutoresizingMaskIntoConstraints="NO" id="WEP-yE-fN1">
+                                <rect key="frame" x="20" y="283" width="35" height="35"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="squareWall.png" translatesAutoresizingMaskIntoConstraints="NO" id="8Zv-3u-StC">
+                                <rect key="frame" x="20" y="28" width="70" height="70"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="squareWall.png" translatesAutoresizingMaskIntoConstraints="NO" id="g9T-7e-afa">
+                                <rect key="frame" x="83" y="94" width="70" height="70"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="squareWall.png" translatesAutoresizingMaskIntoConstraints="NO" id="ymr-DO-W5I">
+                                <rect key="frame" x="146" y="159" width="70" height="70"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="squareWall.png" translatesAutoresizingMaskIntoConstraints="NO" id="izx-u6-ZLW">
+                                <rect key="frame" x="124" y="289" width="70" height="70"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="squareWall.png" translatesAutoresizingMaskIntoConstraints="NO" id="QjE-Jd-aEt">
+                                <rect key="frame" x="238" y="322" width="70" height="70"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="squareWall.png" translatesAutoresizingMaskIntoConstraints="NO" id="nmR-cd-iaQ">
+                                <rect key="frame" x="419" y="224" width="70" height="70"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ghost.png" translatesAutoresizingMaskIntoConstraints="NO" id="ux4-rQ-pet">
+                                <rect key="frame" x="283" y="20" width="35" height="35"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="squareWall.png" translatesAutoresizingMaskIntoConstraints="NO" id="dTd-pk-PhX">
+                                <rect key="frame" x="351" y="289" width="70" height="70"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="squareWall.png" translatesAutoresizingMaskIntoConstraints="NO" id="o8D-d5-NPh">
+                                <rect key="frame" x="20" y="390" width="70" height="70"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="squareWall.png" translatesAutoresizingMaskIntoConstraints="NO" id="Pg3-k7-OZ3">
+                                <rect key="frame" x="380" y="401" width="70" height="70"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ghost.png" translatesAutoresizingMaskIntoConstraints="NO" id="VcO-KF-ant">
+                                <rect key="frame" x="498" y="372" width="35" height="35"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="exit.png" translatesAutoresizingMaskIntoConstraints="NO" id="FtP-kV-EgV">
+                                <rect key="frame" x="545" y="241" width="35" height="35"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="squareWall.png" translatesAutoresizingMaskIntoConstraints="NO" id="7hE-Dh-5Iq">
+                                <rect key="frame" x="463" y="86" width="70" height="70"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ghost.png" translatesAutoresizingMaskIntoConstraints="NO" id="bt2-A3-NmE">
+                                <rect key="frame" x="224" y="457" width="35" height="35"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="ghost1" destination="ux4-rQ-pet" id="uIn-MD-cMy"/>
+                        <outlet property="ghost2" destination="bt2-A3-NmE" id="Huj-wM-SRp"/>
+                        <outlet property="ghost3" destination="VcO-KF-ant" id="ev1-Qq-qbg"/>
+                        <outlet property="pacMan" destination="WEP-yE-fN1" id="cZM-6T-BJb"/>
+                        <outletCollection property="wall" destination="8Zv-3u-StC" collectionClass="NSMutableArray" id="cNG-Km-q0E"/>
+                        <outletCollection property="wall" destination="g9T-7e-afa" collectionClass="NSMutableArray" id="BnZ-6D-IlY"/>
+                        <outletCollection property="wall" destination="ymr-DO-W5I" collectionClass="NSMutableArray" id="Sdw-PQ-82K"/>
+                        <outletCollection property="wall" destination="izx-u6-ZLW" collectionClass="NSMutableArray" id="CMN-cE-eUq"/>
+                        <outletCollection property="wall" destination="QjE-Jd-aEt" collectionClass="NSMutableArray" id="8Wb-IB-Lt2"/>
+                        <outletCollection property="wall" destination="o8D-d5-NPh" collectionClass="NSMutableArray" id="b4X-ap-nVQ"/>
+                        <outletCollection property="wall" destination="7hE-Dh-5Iq" collectionClass="NSMutableArray" id="ZzO-LC-1IS"/>
+                        <outletCollection property="wall" destination="nmR-cd-iaQ" collectionClass="NSMutableArray" id="Clf-sC-FfZ"/>
+                        <outletCollection property="wall" destination="dTd-pk-PhX" collectionClass="NSMutableArray" id="ST6-9u-ZIM"/>
+                        <outletCollection property="wall" destination="Pg3-k7-OZ3" collectionClass="NSMutableArray" id="Gje-0S-koN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="349" y="407"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="exit.png" width="33" height="33"/>
+        <image name="ghost.png" width="32" height="32"/>
+        <image name="pacman.png" width="32" height="32"/>
+        <image name="squareWall.png" width="64" height="64"/>
+    </resources>
 </document>

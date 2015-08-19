@@ -10,6 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+  @IBOutlet var pacMan: UIImageView!
+  @IBOutlet var ghost1: UIImageView!
+  @IBOutlet var ghost2: UIImageView!
+  @IBOutlet var ghost3: UIImageView!
+  
+  //@IBOutlet var collectionOfViews: Array<UIView>?
+  @IBOutlet var wall: [UIImageView]!
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
